@@ -54,7 +54,7 @@ MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](htt
 
 Here you can see a comparison between the original image and the enhanced image using the **IRCNN_Mx1_fp16** model.
 
-| Original Image                        | Enhanced Image (IRCNN_Mx1_fp16.onnx)        |
+| Original Image                        | Enhanced Image (IRCNN_Mx1_fp16)        |
 | ------------------------------------- | ------------------------------------- |
 | ![Original](Assets/OriginalImage.png) | ![Enhanced](Assets/UpscalerImage.png) |
 
