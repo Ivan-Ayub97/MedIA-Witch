@@ -85,7 +85,7 @@ The image on the left is the original, and the one on the right is the same imag
 - **[PyInstaller](https://www.pyinstaller.org/)** – Tool for packaging MedIA-Witch into an executable file. (GPLv2 or later)
 - **[Inno Setup](http://www.jrsoftware.org/isinfo.php)** – Installer creator. (Inno Setup License)
 
-MedIA-Witch is distributed under the **MIT License**. Please refer to the [LICENSE](LICENSE.md) file for more details.
+MedIA-Witch is distributed under the **MIT License**. Please refer to the [LICENSE](LICENSE) file for more details.
 
 ## 🤝 Contributions
 
