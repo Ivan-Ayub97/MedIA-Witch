@@ -12,7 +12,7 @@ Follow these steps to get started with **MedIA-Witch**:
 
 ### Download
 
-[Click here to download the .exe installer from Google Drive](https://drive.google.com/file/d/1BPSwOB5MwFXfVeYH09qUKDuWEMxWdtBL/view?usp=sharing)
+[Click here to download the .exe installer from Google Drive](https://drive.google.com/file/d/1YLsV13gnrLk_STTI_003m0ZV1xpW25ax/view?usp=sharing)
 
 1. **Run the installer** and follow the on-screen instructions.
 2. **Launch the application**: Run MedIA-Witch.exe on your Windows system.
