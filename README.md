@@ -20,6 +20,12 @@ Follow these steps to get started with **MedIA-Witch**:
 
 MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](http://www.jrsoftware.org/isinfo.php) for easy installation and executable creation.
 
+---
+
+![Screenshot](Assets/Capture.png)
+
+---
+
 ## 🌟 Key Features
 
 - **Advanced AI Models for Quality Enhancement:**
@@ -61,8 +67,6 @@ Here you can see a comparison between the original image and the enhanced image 
 The image on the left is the original, and the one on the right is the same image enhanced using the **Real-ESRGANx4** model, improving the quality and resolution while maintaining sharp details and reducing visible noise.
 
 ---
-
-![Screenshot](Assets/Capture.png)
 
 ## 📊 System Requirements
 
