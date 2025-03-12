@@ -7,37 +7,51 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background: linear-gradient(135deg, #000000, #004400);
             color: #00FF00;
             margin: 0;
             padding: 0;
+            transition: background-color 0.3s ease-in-out;
         }
         header {
             background-color: #1a1a1a;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        header:hover {
+            transform: scale(1.05);
         }
         h1, h2, h3 {
             color: #00FF00;
+            text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7);
         }
         p, ul, li {
             line-height: 1.6;
+            font-size: 16px;
         }
         a {
             color: #00FF00;
             text-decoration: none;
+            transition: color 0.3s;
         }
         a:hover {
+            color: #00FF00;
             text-decoration: underline;
         }
         .content {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .screenshot img, .comparison img {
             width: 100%;
-            max-width: 600px;
+            max-width: 700px;
             display: block;
             margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
         }
         table {
             width: 100%;
@@ -48,11 +62,31 @@
             padding: 10px;
             text-align: center;
             border: 1px solid #00FF00;
+            font-size: 14px;
+        }
+        th {
+            background-color: #333;
         }
         footer {
             background-color: #1a1a1a;
             padding: 10px;
             text-align: center;
+            color: #00FF00;
+            font-size: 14px;
+            box-shadow: 0 -4px 8px rgba(0, 255, 0, 0.2);
+        }
+        .button {
+            background-color: #00FF00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #004400;
         }
     </style>
 </head>
@@ -86,6 +120,7 @@
             <li><strong>Start enhancing your images and videos!</strong></li>
         </ol>
         <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup</a> for easy installation and executable creation.</p>
+        <button class="button">Download Installer</button>
     </section>
 
     <section>
