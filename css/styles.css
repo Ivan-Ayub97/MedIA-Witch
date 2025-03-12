@@ -1,0 +1,108 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo negro y texto blanco */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para encabezados */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Títulos principales */
+h1 {
+    color: #FF5733;
+    font-size: 3rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    color: #FF5733;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Subtítulo */
+.tagline {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #FF5733;
+}
+
+.download-btn {
+    background-color: transparent;
+    color: #FF5733;
+    border-color: #FF5733;
+}
+
+.download-btn:hover {
+    background-color: #FF5733;
+    color: #000;
+}
+
+/* Sección con bordes */
+section {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #FF5733;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Enlaces dentro del pie de página */
+footer a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
