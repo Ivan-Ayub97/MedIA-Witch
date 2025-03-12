@@ -1,43 +1,63 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Workflow mejorado para desplegar contenido estático en GitHub Pages
+name: Deploy Static Content to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Ejecuta en pushes hacia la rama principal
   push:
-    branches: ["main"]
+    branches: 
+      - "main"
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Permite ejecutar el flujo manualmente desde la pestaña de Actions
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Establece permisos del GITHUB_TOKEN para permitir despliegue en GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: read    # Permite leer el contenido del repositorio
+  pages: write      # Permite escribir en GitHub Pages
+  id-token: write   # Permite escribir en el token de identificación
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Permite solo un despliegue concurrente, evitando la ejecución de múltiples despliegues al mismo tiempo.
+# No cancela las ejecuciones en curso para asegurar que se complete la implementación en producción.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Usa la versión más estable de checkout
+
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/setup-pages@v2  # Versión más eficiente para GitHub Pages
+
+      - name: Clean and prepare deployment folder
+        run: |
+          # Si necesitas excluir archivos no deseados o limpiar antes de desplegar, usa esto
+          rm -rf .git  # Opcional: Si no quieres subir el historial de git
+          mkdir public  # Si es necesario que tus archivos se desplieguen en una carpeta específica
+          cp -r * public  # Copiar todos los archivos a la carpeta pública
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: './public'  # Se asegura de que solo los archivos relevantes sean desplegados
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4  # Última versión estable para deploy
+
+      - name: Check deployment success
+        run: |
+          if [[ ${{ steps.deployment.outputs.page_url }} == "" ]]; then
+            echo "Error: Deployment failed!"
+            exit 1
+          else
+            echo "Deployment successful!"
+            echo "Page URL: ${{ steps.deployment.outputs.page_url }}"
+          fi
