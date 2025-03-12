@@ -3,29 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedIA-Witch</title>
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <title>MedIA-Witch - AI-Based Image and Video Enhancement Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #00FF00;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #00FF00;
+        }
+        p, ul, li {
+            line-height: 1.6;
+        }
+        a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .screenshot img, .comparison img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 10px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #00FF00;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a MedIA-Witch</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h2>Un proyecto con IA para la medicina</h2>
-        <p>Explora nuestro sitio para aprender más sobre nuestro trabajo.</p>
-        <button class="btn">Explorar</button>
-    </main>
+<header>
+    <h1>MedIA-Witch</h1>
+    <h2>AI-Based Image and Video Enhancement Tool</h2>
+</header>
 
-    <footer>
-        <p>&copy; 2024 MedIA-Witch. Todos los derechos reservados.</p>
-    </footer>
+<div class="content">
+
+    <section>
+        <h3>🌟 Description</h3>
+        <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application for enhancing images and videos using advanced AI models. Based on <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a>, it integrates models such as <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>, offering an easy-to-use interface for improving the quality and resolution of your media.</p>
+        
+        <div class="screenshot">
+            <img src="Assets/logo.png" alt="MedIA-Witch logo">
+        </div>
+
+        <div class="screenshot">
+            <img src="Assets/Capture.png" alt="Screenshot of MedIA-Witch">
+        </div>
+    </section>
+
+    <section>
+        <h3>🚀 Installation</h3>
+        <ol>
+            <li><strong>Run the installer</strong> and follow the on-screen instructions.</li>
+            <li><strong>Launch the application</strong>: Run MedIA-Witch.exe on your Windows system.</li>
+            <li><strong>Start enhancing your images and videos!</strong></li>
+        </ol>
+        <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup</a> for easy installation and executable creation.</p>
+    </section>
+
+    <section>
+        <h3>🌟 Key Features</h3>
+        <ul>
+            <li><strong>Advanced AI Models for Quality Enhancement:</strong> Real-ESRGAN, SRGAN, BSRGAN, and IRCNN for enhancing image and video quality.</li>
+            <li><strong>Batch Processing:</strong> Improve multiple images and videos simultaneously.</li>
+            <li><strong>Customizable Settings:</strong> Choose output resolution, image/video format, and AI model.</li>
+            <li><strong>User-Friendly Interface:</strong> Simplifies media enhancement with just a few clicks.</li>
+            <li><strong>Open-Source:</strong> Available under the MIT License, free for modification and extension.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>🔍 Quality Comparison</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Original Image</th>
+                    <th>Enhanced Image (IRCNN_Mx1_fp16)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="Assets/OriginalImage.png" alt="Original Image"></td>
+                    <td><img src="Assets/UpscalerImage.png" alt="Enhanced Image"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>📊 System Requirements</h3>
+        <ul>
+            <li><strong>Operating System:</strong> Windows 10 or later.</li>
+            <li><strong>RAM:</strong> Minimum 4GB, recommended 8GB or more.</li>
+            <li><strong>GPU:</strong> Recommended NVIDIA GPU for faster processing.</li>
+            <li><strong>Storage:</strong> Sufficient space for output files.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>📜 Credits and License</h3>
+        <p>MedIA-Witch is based on several open-source technologies, including:</p>
+        <ul>
+            <li><a href="https://github.com/Djdefrag/QualityScaler.git">QualityScaler</a> – Main engine for image and video enhancement (MIT License)</li>
+            <li><a href="https://github.com/xinntao/Real-ESRGAN">Real-ESRGAN</a> – Image resolution enhancement model (MIT License)</li>
+            <li><a href="https://arxiv.org/abs/1609.04802">SRGAN</a> – Generative Adversarial Network for super-resolution (MIT License)</li>
+            <li><a href="https://arxiv.org/abs/1901.05324">BSRGAN</a> – GAN for degraded images (MIT License)</li>
+            <li><a href="https://github.com/lipengFu/IRCNN.git">IRCNN</a> – Noise reduction and enhancement model (MIT License)</li>
+            <li><a href="https://onnxruntime.ai/">ONNX Runtime</a> – Optimized engine for deep learning models (Apache License 2.0)</li>
+            <li><a href="https://ffmpeg.org/">FFmpeg</a> – Multimedia framework (LGPL-2.1 or later)</li>
+            <li><a href="https://www.pyinstaller.org/">PyInstaller</a> – Packaging tool (GPLv2 or later)</li>
+            <li><a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a> – Installer creator (Inno Setup License)</li>
+        </ul>
+        <p>MedIA-Witch is distributed under the <strong>MIT License</strong>. Please refer to the LICENSE file for more details.</p>
+    </section>
+
+    <section>
+        <h3>🤝 Contributions</h3>
+        <p>Contributions are welcome! To collaborate:</p>
+        <ol>
+            <li><strong>Fork</strong> the repository and create a new branch.</li>
+            <li><strong>Make your improvements</strong> or fixes.</li>
+            <li><strong>Submit a pull request</strong> with a clear description of the changes.</li>
+        </ol>
+        <p>If you have feedback, bug reports, or suggestions, contact us at <a href="mailto:sellocasadenubes@gmail.com">sellocasadenubes@gmail.com</a>.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 MedIA-Witch. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
