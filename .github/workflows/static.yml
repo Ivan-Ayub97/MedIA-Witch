@@ -1,64 +1,53 @@
-# Workflow mejorado para desplegar contenido estático en GitHub Pages
-name: Deploy Static Content to GitHub Pages
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página GitHub Pages</title>
+  <!-- Enlace a fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Enlace a Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Acerca de</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
 
-on:
-  # Ejecuta en pushes hacia la rama principal
-  push:
-    branches: 
-      - "main"
+  <!-- Sección de inicio -->
+  <section id="home">
+    <h1>Bienvenidos a Mi Página</h1>
+    <p>Esta es una página de ejemplo para GitHub Pages con un diseño moderno y atractivo.</p>
+    <button><i class="fas fa-download"></i> Descargar</button>
+  </section>
 
-  # Permite ejecutar el flujo manualmente desde la pestaña de Actions
-  workflow_dispatch:
+  <!-- Sección acerca de -->
+  <section id="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Información interesante sobre el proyecto y la organización.</p>
+  </section>
 
-# Establece permisos del GITHUB_TOKEN para permitir despliegue en GitHub Pages
-permissions:
-  contents: read    # Permite leer el contenido del repositorio
-  pages: write      # Permite escribir en GitHub Pages
-  id-token: write   # Permite escribir en el token de identificación
+  <!-- Sección de contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Puedes contactarnos a través de las redes sociales o enviándonos un correo electrónico.</p>
+  </section>
 
-# Permite solo un despliegue concurrente, evitando la ejecución de múltiples despliegues al mismo tiempo.
-# No cancela las ejecuciones en curso para asegurar que se complete la implementación en producción.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    <div>
+      <a href="https://twitter.com/miusuario" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/miusuario" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
 
-jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3  # Usa la versión más estable de checkout
-
-      - name: Setup Pages
-        uses: actions/setup-pages@v2  # Versión más eficiente para GitHub Pages
-
-      - name: Clean and prepare deployment folder
-        run: |
-          # Si necesitas excluir archivos no deseados o limpiar antes de desplegar, usa esto
-          rm -rf .git  # Opcional: Si no quieres subir el historial de git
-          mkdir public  # Si es necesario que tus archivos se desplieguen en una carpeta específica
-          cp -r * public  # Copiar todos los archivos a la carpeta pública
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './public'  # Se asegura de que solo los archivos relevantes sean desplegados
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4  # Última versión estable para deploy
-
-      - name: Check deployment success
-        run: |
-          if [[ ${{ steps.deployment.outputs.page_url }} == "" ]]; then
-            echo "Error: Deployment failed!"
-            exit 1
-          else
-            echo "Deployment successful!"
-            echo "Page URL: ${{ steps.deployment.outputs.page_url }}"
-          fi
-
+</body>
+</html>
