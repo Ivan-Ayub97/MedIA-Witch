@@ -7,51 +7,37 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #000000, #004400);
+            background-color: #000;
             color: #00FF00;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease-in-out;
         }
         header {
             background-color: #1a1a1a;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-        header:hover {
-            transform: scale(1.05);
         }
         h1, h2, h3 {
             color: #00FF00;
-            text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7);
         }
         p, ul, li {
             line-height: 1.6;
-            font-size: 16px;
         }
         a {
             color: #00FF00;
             text-decoration: none;
-            transition: color 0.3s;
         }
         a:hover {
-            color: #00FF00;
             text-decoration: underline;
         }
         .content {
             padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
         .screenshot img, .comparison img {
             width: 100%;
-            max-width: 700px;
+            max-width: 600px;
             display: block;
             margin: 10px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
         }
         table {
             width: 100%;
@@ -62,31 +48,11 @@
             padding: 10px;
             text-align: center;
             border: 1px solid #00FF00;
-            font-size: 14px;
-        }
-        th {
-            background-color: #333;
         }
         footer {
             background-color: #1a1a1a;
             padding: 10px;
             text-align: center;
-            color: #00FF00;
-            font-size: 14px;
-            box-shadow: 0 -4px 8px rgba(0, 255, 0, 0.2);
-        }
-        .button {
-            background-color: #00FF00;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #004400;
         }
     </style>
 </head>
@@ -101,7 +67,7 @@
 
     <section>
         <h3>🌟 Description</h3>
-        <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application for enhancing images and videos using advanced AI models. Based on <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a>, it integrates models such as <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>, offering an easy-to-use interface for improving the quality and resolution of your media.</p>
+        <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application for enhancing images and videos using advanced AI models. Based on <a href="https://github.com/Djdefrag/QualityScaler" target="_blank">QualityScaler</a>, it integrates models such as <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>, offering an easy-to-use interface for improving the quality and resolution of your media.</p>
         
         <div class="screenshot">
             <img src="Assets/logo.png" alt="MedIA-Witch logo">
@@ -119,8 +85,7 @@
             <li><strong>Launch the application</strong>: Run MedIA-Witch.exe on your Windows system.</li>
             <li><strong>Start enhancing your images and videos!</strong></li>
         </ol>
-        <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup</a> for easy installation and executable creation.</p>
-        <button class="button">Download Installer</button>
+        <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/" target="_blank">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php" target="_blank">InnoSetup</a> for easy installation and executable creation.</p>
     </section>
 
     <section>
@@ -166,15 +131,15 @@
         <h3>📜 Credits and License</h3>
         <p>MedIA-Witch is based on several open-source technologies, including:</p>
         <ul>
-            <li><a href="https://github.com/Djdefrag/QualityScaler.git">QualityScaler</a> – Main engine for image and video enhancement (MIT License)</li>
-            <li><a href="https://github.com/xinntao/Real-ESRGAN">Real-ESRGAN</a> – Image resolution enhancement model (MIT License)</li>
-            <li><a href="https://arxiv.org/abs/1609.04802">SRGAN</a> – Generative Adversarial Network for super-resolution (MIT License)</li>
-            <li><a href="https://arxiv.org/abs/1901.05324">BSRGAN</a> – GAN for degraded images (MIT License)</li>
-            <li><a href="https://github.com/lipengFu/IRCNN.git">IRCNN</a> – Noise reduction and enhancement model (MIT License)</li>
-            <li><a href="https://onnxruntime.ai/">ONNX Runtime</a> – Optimized engine for deep learning models (Apache License 2.0)</li>
-            <li><a href="https://ffmpeg.org/">FFmpeg</a> – Multimedia framework (LGPL-2.1 or later)</li>
-            <li><a href="https://www.pyinstaller.org/">PyInstaller</a> – Packaging tool (GPLv2 or later)</li>
-            <li><a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a> – Installer creator (Inno Setup License)</li>
+            <li><a href="https://github.com/Djdefrag/QualityScaler.git" target="_blank">QualityScaler</a> – Main engine for image and video enhancement (MIT License)</li>
+            <li><a href="https://github.com/xinntao/Real-ESRGAN" target="_blank">Real-ESRGAN</a> – Image resolution enhancement model (MIT License)</li>
+            <li><a href="https://arxiv.org/abs/1609.04802" target="_blank">SRGAN</a> – Generative Adversarial Network for super-resolution (MIT License)</li>
+            <li><a href="https://arxiv.org/abs/1901.05324" target="_blank">BSRGAN</a> – GAN for degraded images (MIT License)</li>
+            <li><a href="https://github.com/lipengFu/IRCNN.git" target="_blank">IRCNN</a> – Noise reduction and enhancement model (MIT License)</li>
+            <li><a href="https://onnxruntime.ai/" target="_blank">ONNX Runtime</a> – Optimized engine for deep learning models (Apache License 2.0)</li>
+            <li><a href="https://ffmpeg.org/" target="_blank">FFmpeg</a> – Multimedia framework (LGPL-2.1 or later)</li>
+            <li><a href="https://www.pyinstaller.org/" target="_blank">PyInstaller</a> – Packaging tool (GPLv2 or later)</li>
+            <li><a href="http://www.jrsoftware.org/isinfo.php" target="_blank">Inno Setup</a> – Installer creator (Inno Setup License)</li>
         </ul>
         <p>MedIA-Witch is distributed under the <strong>MIT License</strong>. Please refer to the LICENSE file for more details.</p>
     </section>
@@ -195,6 +160,16 @@
 <footer>
     <p>&copy; 2025 MedIA-Witch. All rights reserved.</p>
 </footer>
+
+<script>
+    // Adding interactivity
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Example: Log the clicked link
+            console.log('Link clicked: ', this.href);
+        });
+    });
+</script>
 
 </body>
 </html>
