@@ -1,3 +1,7 @@
+### Download
+
+[Click here to download the .exe installer from Google Drive](https://drive.google.com/file/d/1CnmoM4tFXdS3KpNSUvMAOXNhSdAtIwan/view?usp=sharing)
+
 # MedIA-Witch
 
 ### AI-Based Image and Video Enhancement Tool
@@ -6,23 +10,21 @@
 
 ![MedIA-Witch logo](Assets/logo.png)
 
+---
+
+![Screenshot](Assets/Capture.png)
+
+---
+
 ## 🚀 Installation
 
 Follow these steps to get started with **MedIA-Witch**:
-
-### Download
-
-[Click here to download the .exe installer from Google Drive](https://drive.google.com/file/d/1CnmoM4tFXdS3KpNSUvMAOXNhSdAtIwan/view?usp=sharing)
 
 1. **Run the installer** and follow the on-screen instructions.
 2. **Launch the application**: Run MedIA-Witch.exe on your Windows system.
 3. **Start enhancing your images and videos!**
 
 MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](http://www.jrsoftware.org/isinfo.php) for easy installation and executable creation.
-
----
-
-![Screenshot](Assets/Capture.png)
 
 ---
 
