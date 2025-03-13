@@ -1,6 +1,6 @@
 ### Download
 
-[Click here to download the .exe installer from Google Drive](https://drive.google.com/file/d/1CnmoM4tFXdS3KpNSUvMAOXNhSdAtIwan/view?usp=sharing)
+[Click here to download the .exe installer from Google Drive](https://sourceforge.net/projects/media-witch/)
 
 # MedIA-Witch
 
