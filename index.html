@@ -15,6 +15,10 @@
             padding: 0;
             line-height: 1.6;
             text-align: center;
+            background-image: url('Assets/logo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         h1, h2, h3 {
@@ -36,6 +40,15 @@
             text-decoration: underline;
         }
 
+        /* Overlay Layer for Text */
+        .overlay {
+            background-color: rgba(255, 102, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
         /* Container */
         .container {
             max-width: 1200px;
@@ -47,6 +60,8 @@
         header {
             margin-bottom: 40px;
             padding-top: 20px;
+            position: relative;
+            z-index: 10;
         }
 
         header h1 {
@@ -61,8 +76,8 @@
         }
 
         header .btn {
-            background-color: #ff6f00;
-            color: white;
+            background-color: #800080;
+            color: #00ff00;
             padding: 12px 25px;
             border: none;
             border-radius: 5px;
@@ -73,12 +88,15 @@
         }
 
         header .btn:hover {
-            background-color: #e65c00;
+            background-color: #660066;
         }
 
         /* Section */
         .section {
             margin-bottom: 50px;
+            border: 3px solid #ff6f00;
+            border-radius: 15px;
+            padding: 20px;
         }
 
         .section img {
@@ -99,23 +117,6 @@
         .comparison div {
             width: 48%;
             text-align: center;
-        }
-
-        /* Buttons */
-        .btn-secondary {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        .btn-secondary:hover {
-            background-color: #45a049;
         }
 
         /* Footer */
@@ -201,7 +202,9 @@
         <!-- Overview Section -->
         <section class="section">
             <h2>About MedIA-Witch</h2>
-            <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application for enhancing images and videos using advanced AI models. Built upon the <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a> framework, it includes optimized models such as <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>, providing an intuitive interface for improving your media quality and resolution.</p>
+            <div class="overlay">
+                <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application for enhancing images and videos using advanced AI models. Built upon the <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a> framework, it includes optimized models such as <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>, providing an intuitive interface for improving your media quality and resolution.</p>
+            </div>
             <img src="Assets/logo.png" alt="MedIA-Witch logo">
         </section>
 
@@ -232,13 +235,15 @@
         <!-- Installation Section -->
         <section class="section">
             <h2>🚀 Installation</h2>
-            <p>Follow these simple steps to install MedIA-Witch:</p>
-            <ol>
-                <li><strong>Run the installer</strong> and follow the on-screen instructions.</li>
-                <li><strong>Launch the application</strong> by opening MedIA-Witch.exe on your Windows system.</li>
-                <li><strong>Start enhancing media</strong> with just a few clicks!</li>
-            </ol>
-            <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a> for easy installation.</p>
+            <div class="overlay">
+                <p>Follow these simple steps to install MedIA-Witch:</p>
+                <ol>
+                    <li><strong>Run the installer</strong> and follow the on-screen instructions.</li>
+                    <li><strong>Launch the application</strong> by opening MedIA-Witch.exe on your Windows system.</li>
+                    <li><strong>Start enhancing media</strong> with just a few clicks!</li>
+                </ol>
+                <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a> for easy installation.</p>
+            </div>
         </section>
 
         <hr>
@@ -246,59 +251,15 @@
         <!-- How to Use Section -->
         <section class="section">
             <h2>🛠️ How to Use</h2>
-            <ol>
-                <li><strong>Launch the application</strong>: Run MedIA-Witch.exe as administrator for optimal performance.</li>
-                <li><strong>Upload files</strong>: Add images, videos, or folders for enhancement.</li>
-                <li><strong>Set configuration</strong>: Choose an AI model and adjust output settings (resolution, format, etc.).</li>
-                <li><strong>Start the enhancement</strong>: Click <strong>Start</strong> and let MedIA-Witch enhance your media.</li>
-                <li><strong>Save the results</strong>: After processing, the enhanced files will be saved in your chosen location.</li>
-            </ol>
-        </section>
-
-        <hr>
-
-        <!-- Quality Comparison Section -->
-        <section class="section comparison">
-            <h2>🔍 Quality Comparison</h2>
-            <div>
-                <h3>Original Image</h3>
-                <img src="Assets/OriginalImage.png" alt="Original Image">
+            <div class="overlay">
+                <ol>
+                    <li><strong>Launch the application</strong>: Run MedIA-Witch.exe as administrator for optimal performance.</li>
+                    <li><strong>Upload files</strong>: Add images, videos, or folders for enhancement.</li>
+                    <li><strong>Set configuration</strong>: Choose an AI model and adjust output settings (resolution, format, etc.).</li>
+                    <li><strong>Start the enhancement</strong>: Click <strong>Start</strong> and let MedIA-Witch enhance your media.</li>
+                    <li><strong>Save the results</strong>: After processing, the enhanced files will be saved in your chosen location.</li>
+                </ol>
             </div>
-            <div>
-                <h3>Enhanced Image (IRCNN_Mx1_fp16)</h3>
-                <img src="Assets/UpscalerImage.png" alt="Enhanced Image">
-            </div>
-        </section>
-
-        <hr>
-
-        <!-- System Requirements Section -->
-        <section class="section">
-            <h2>📊 System Requirements</h2>
-            <ul>
-                <li><strong>Operating System:</strong> Windows 10 or later</li>
-                <li><strong>RAM:</strong> Minimum 4GB (8GB recommended)</li>
-                <li><strong>GPU:</strong> NVIDIA GPU recommended for faster processing</li>
-                <li><strong>Storage:</strong> Adequate space for output files</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <!-- Credits Section -->
-        <section class="section">
-            <h2>📜 Credits & License</h2>
-            <p>MedIA-Witch is based on <a href="https://github.com/Djdefrag/QualityScaler.git">QualityScaler</a> and integrates several open-source technologies:</p>
-            <ul>
-                <li><a href="https://github.com/Djdefrag/QualityScaler.git">QualityScaler</a> (MIT License)</li>
-                <li><a href="https://github.com/xinntao/Real-ESRGAN">Real-ESRGAN</a> (MIT License)</li>
-                <li><a href="https://arxiv.org/abs/1609.04802">SRGAN</a> (MIT License)</li>
-                <li><a href="https://arxiv.org/abs/1901.05324">BSRGAN</a> (MIT License)</li>
-                <li><a href="https://github.com/lipengFu/IRCNN.git">IRCNN</a> (MIT License)</li>
-                <li><a href="https://onnxruntime.ai/">ONNX Runtime</a> (Apache License 2.0)</li>
-                <li><a href="https://ffmpeg.org/">FFmpeg</a> (LGPL-2.1)</li>
-            </ul>
-            <p>Distributed under the <a href="LICENSE.md">MIT License</a>.</p>
         </section>
 
         <hr>
