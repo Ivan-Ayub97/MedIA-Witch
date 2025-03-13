@@ -90,10 +90,16 @@
             cursor: pointer;
             font-size: 16px;
             margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
         }
 
         .btn:hover {
             background-color: #e56b00;
+        }
+
+        .sf-badge {
+            margin-left: 10px;
         }
 
         footer {
@@ -131,22 +137,23 @@
             <h1>MedIA-Witch</h1>
             <h3>AI-Based Image and Video Enhancement Tool</h3>
             <!-- Button and SourceForge Badge Integration -->
-            <a href="https://sourceforge.net/projects/media-witch/" class="btn">SETUP DOWNLOAD</a>
-
-            <!-- Begin SF Tag -->
-            <div class="sf-root" data-id="3858128" data-badge="oss-users-love-us-black" style="width:200px">
-                <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
-            </div>
-            <script>
-                (function () {
-                    var sc = document.createElement('script');
-                    sc.async = true;
-                    sc.src = 'https://b.sf-syn.com/badge_js?sf_id=3858128';
-                    var p = document.getElementsByTagName('script')[0];
-                    p.parentNode.insertBefore(sc, p);
-                })();
-            </script>
-            <!-- End SF Tag -->
+            <a href="https://sourceforge.net/projects/media-witch/" class="btn">
+                SETUP DOWNLOAD
+                <!-- Begin SF Badge -->
+                <div class="sf-root sf-badge" data-id="3858128" data-badge="oss-users-love-us-black" style="width: 200px;">
+                    <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
+                </div>
+                <script>
+                    (function () {
+                        var sc = document.createElement('script');
+                        sc.async = true;
+                        sc.src = 'https://b.sf-syn.com/badge_js?sf_id=3858128';
+                        var p = document.getElementsByTagName('script')[0];
+                        p.parentNode.insertBefore(sc, p);
+                    })();
+                </script>
+                <!-- End SF Badge -->
+            </a>
         </header>
 
         <!-- Overview Section -->
