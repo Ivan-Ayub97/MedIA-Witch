@@ -44,7 +44,6 @@
             text-align: center;
         }
 
-        /* Header and Menu */
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -60,7 +59,6 @@
             margin-top: 0;
         }
 
-        /* Navbar fixed to the top */
         .navbar {
             display: flex;
             justify-content: center;
@@ -85,7 +83,6 @@
             color: #ff7f00;
         }
 
-        /* Sections */
         .section {
             margin-bottom: 40px;
             padding: 40px;
@@ -106,7 +103,6 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            justify-content: center;
         }
 
         .comparison div {
@@ -139,14 +135,12 @@
             border-top: 3px solid #ff7f00;
         }
 
-        /* Center the badge */
         .badge-container {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .comparison {
                 flex-direction: column;
@@ -163,12 +157,10 @@
             }
         }
 
-        /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Hover Effects */
         .hover-card {
             background-color: #333;
             padding: 20px;
@@ -187,13 +179,11 @@
 <body>
 
     <div class="container">
-        <!-- Header Section -->
         <header class="header">
             <h1>MedIA-Witch</h1>
             <h3>AI-Powered Image and Video Enhancement Tool</h3>
         </header>
 
-        <!-- Navigation Menu -->
         <nav class="navbar">
             <a href="#overview">Overview</a>
             <a href="#features">Key Features</a>
@@ -204,66 +194,51 @@
             <a href="#credits">Credits</a>
         </nav>
 
-        <!-- Overview Section -->
         <section id="overview" class="section">
             <h2>About MedIA-Witch</h2>
-            <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application designed to enhance images and videos using advanced AI models. Built upon <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a>, the tool integrates optimized models like <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>.</p>
+            <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application designed to enhance images and videos using advanced AI models.</p>
             <img src="Assets/logo.png" alt="MedIA-Witch logo">
             <img src="Assets/Capture.png" alt="Screenshot of MedIA-Witch">
         </section>
 
-        <!-- Key Features Section -->
         <section id="features" class="section">
             <h2>🌟 Key Features</h2>
             <ul>
-                <li><strong>Advanced AI Models for Quality Enhancement</strong>: Real-ESRGAN, SRGAN, BSRGAN, and IRCNN for improving media quality.</li>
-                <li><strong>Batch Processing</strong>: Process multiple images and videos simultaneously.</li>
-                <li><strong>Customizable Settings</strong>: Adjust resolution, format, and AI model for the best enhancement results.</li>
-                <li><strong>User-Friendly Interface</strong>: Easy to use for users of all levels.</li>
-                <li><strong>Open-Source</strong>: Released under the <a href="https://github.com/Ivan-Ayub97/MedIA-Witch/blob/main/LICENSE.md">MIT License</a>.</li>
+                <li>Advanced AI Models for Quality Enhancement</li>
+                <li>Batch Processing</li>
+                <li>Customizable Settings</li>
+                <li>User-Friendly Interface</li>
+                <li>Open-Source</li>
             </ul>
         </section>
-
-        <!-- Installation Section -->
+        
         <section id="installation" class="section">
-            <a href="https://sourceforge.net/projects/media-witch/" class="btn">
-                DOWNLOAD SETUP
-            </a>
+            <h2>🔽 Download MedIA-Witch</h2>
             <div class="badge-container">
-                <div class="sf-root" data-id="3858128" data-badge="oss-users-love-us-black" style="width:125px">
+                <div style="text-align: center; margin-right: 20px;">
+                    <p>Download from SourceForge</p>
                     <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
                 </div>
+                <div style="text-align: center;">
+                    <p>Download from Itch.io</p>
+                    <iframe frameborder="0" src="https://itch.io/embed/3401857?border_width=5&bg_color=000000&fg_color=ff710c&link_color=ffffff&border_color=992bbb" width="216" height="175">
+                        <a href="https://ivanayub97.itch.io/media-witch">MedIA-Witch by IvanAyub97</a>
+                    </iframe>
+                </div>
             </div>
-            <script>
-                (function () {
-                    var sc = document.createElement('script');
-                    sc.async = true;
-                    sc.src = 'https://b.sf-syn.com/badge_js?sf_id=3858128';
-                    var p = document.getElementsByTagName('script')[0];
-                    p.parentNode.insertBefore(sc, p);
-                })();
-            </script>
-            <h2>Installation</h2>
-            <ol>
-                <li><strong>Run the installer</strong> and follow the instructions.</li>
-                <li><strong>Launch the application</strong>: Open MedIA-Witch.exe.</li>
-                <li><strong>Start enhancing your media!</strong></li>
-            </ol>
         </section>
 
-        <!-- How to Use Section -->
         <section id="usage" class="section">
             <h2>🛠️ How to Use</h2>
             <ol>
-                <li><strong>Launch the application</strong> as administrator.</li>
-                <li><strong>Select your media files</strong>: Upload images or videos.</li>
-                <li><strong>Configure your settings</strong>: Choose AI model, resolution, and format.</li>
-                <li><strong>Start the enhancement process</strong> by clicking "UPSCALE".</li>
-                <li><strong>Save your files</strong> once processing is complete.</li>
+                <li>Launch the application as administrator.</li>
+                <li>Select your media files.</li>
+                <li>Configure your settings.</li>
+                <li>Start the enhancement process.</li>
+                <li>Save your files.</li>
             </ol>
         </section>
 
-        <!-- Quality Comparison Section -->
         <section id="comparison" class="section">
             <h2>🔍 Quality Comparison</h2>
             <img src="Assets/Quality_Comparison.gif" alt="Quality Comparison">
