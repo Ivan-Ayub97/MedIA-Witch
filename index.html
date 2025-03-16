@@ -122,6 +122,13 @@
             margin-top: 40px;
         }
 
+                /* Center the badge */
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .comparison {
@@ -192,8 +199,10 @@
             </a>
             <br><br>
             <!-- Begin SF Tag -->
-            <div class="sf-root" data-id="3858128" data-badge="oss-users-love-us-black" style="width:125px">
-                <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
+            <div class="badge-container">
+                <div class="sf-root" data-id="3858128" data-badge="oss-users-love-us-black" style="width:125px">
+                    <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
+                </div>
             </div>
             <script>
                 (function () {
@@ -205,7 +214,7 @@
                 })();
             </script>
             <!-- End SF Tag -->
-            <h2>🚀 Installation</h2>
+            <h2>Installation</h2>
             <ol>
                 <li><strong>Run the installer</strong> and follow the instructions.</li>
                 <li><strong>Launch the application</strong>: Open MedIA-Witch.exe.</li>
