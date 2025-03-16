@@ -60,12 +60,10 @@ MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](htt
 
 ## 🔍 Quality Comparison
 
-<video width="320" height="240" controls>
-  <source src="Assets/Quality_Comparison.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Quality Comparison](Assets/Quality_Comparison.gif)
 
 ---
+
 
 ## 📊 System Requirements
 
