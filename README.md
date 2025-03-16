@@ -62,7 +62,6 @@ MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](htt
 | ------------------------------------------ |
 | ![Original](Assets/Quality_Comparison.mp4) | 
 | ------------------------------------------ |
-The image on the left is the original, and the one on the right is the same image enhanced using the **Real-ESRGANx4** model, improving the quality and resolution while maintaining sharp details and reducing visible noise.
 
 ---
 
