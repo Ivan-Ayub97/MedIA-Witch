@@ -59,9 +59,9 @@ MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](htt
 ---
 
 ## 🔍 Quality Comparison
-| ------------------------------------------ |
-| ![Original](Assets/Quality_Comparison.mp4) | 
-| ------------------------------------------ |
+|---------------------------------------|
+|![Video](Assets/Quality_Comparison.mp4)| 
+|---------------------------------------|
 
 ---
 
