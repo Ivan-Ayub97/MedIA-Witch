@@ -16,17 +16,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            height: 100vh;
+            text-align: center;
         }
 
         h1, h2, h3 {
             color: #ff7f00;
-            text-align: center;
         }
 
         p, ul, ol {
             color: #d3d3d3;
-            text-align: center;
         }
 
         a {
@@ -42,10 +41,7 @@
             max-width: 1200px;
             width: 100%;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
         }
 
         /* Header and Menu */
@@ -61,24 +57,27 @@
 
         .header h3 {
             font-size: 1.5em;
+            margin-top: 0;
         }
 
         .navbar {
             display: flex;
             justify-content: center;
             background-color: #222;
-            padding: 10px 0;
+            padding: 15px 0;
             margin-bottom: 40px;
-            width: 100%;
-            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .navbar a {
             color: #f1f1f1;
-            margin: 0 15px;
+            margin: 0 20px;
             text-transform: uppercase;
             font-weight: bold;
             font-size: 18px;
+            transition: color 0.3s;
         }
 
         .navbar a:hover {
@@ -88,11 +87,11 @@
         /* Sections */
         .section {
             margin-bottom: 40px;
-            padding: 20px;
+            padding: 40px;
             border-top: 3px solid #800080;
             border-bottom: 3px solid #800080;
-            width: 100%;
-            text-align: center;
+            background-color: #232323;
+            border-radius: 10px;
         }
 
         .section img {
@@ -104,24 +103,26 @@
 
         .comparison {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .comparison div {
             width: 48%;
-            margin: 10px;
+            margin-bottom: 20px;
         }
 
         .btn {
             background-color: #ff7f00;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 25px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
             margin-top: 20px;
+            transition: background-color 0.3s;
         }
 
         .btn:hover {
@@ -130,10 +131,11 @@
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #222;
             color: #fff;
             margin-top: 40px;
+            border-top: 3px solid #ff7f00;
         }
 
         /* Center the badge */
@@ -158,6 +160,24 @@
             .header h1 {
                 font-size: 2.5em;
             }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hover Effects */
+        .hover-card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .hover-card:hover {
+            transform: scale(1.05);
+            background-color: #444;
         }
     </style>
 </head>
@@ -187,11 +207,6 @@
             <h2>About MedIA-Witch</h2>
             <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application designed to enhance images and videos using advanced AI models. Built upon <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a>, the tool integrates optimized models like <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>.</p>
             <img src="Assets/logo.png" alt="MedIA-Witch logo">
-        </section>
-
-        <!-- Screenshot Section -->
-        <section class="section screenshot">
-            <h2>📸 Screenshot</h2>
             <img src="Assets/Capture.png" alt="Screenshot of MedIA-Witch">
         </section>
 
@@ -209,9 +224,9 @@
 
         <!-- Installation Section -->
         <section id="installation" class="section">
-            <a href="https://sourceforge.net/projects/media-witch/" class="btn">DOWNLOAD SETUP</a>
-            <br><br>
-            <!-- Begin SF Tag -->
+            <a href="https://sourceforge.net/projects/media-witch/" class="btn">
+                DOWNLOAD SETUP
+            </a>
             <div class="badge-container">
                 <div class="sf-root" data-id="3858128" data-badge="oss-users-love-us-black" style="width:125px">
                     <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
@@ -226,7 +241,6 @@
                     p.parentNode.insertBefore(sc, p);
                 })();
             </script>
-            <!-- End SF Tag -->
             <h2>Installation</h2>
             <ol>
                 <li><strong>Run the installer</strong> and follow the instructions.</li>
