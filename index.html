@@ -15,14 +15,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         h1, h2, h3 {
             color: #ff7f00;
+            text-align: center;
         }
 
         p, ul, ol {
             color: #d3d3d3;
+            text-align: center;
         }
 
         a {
@@ -38,6 +42,10 @@
             max-width: 1200px;
             width: 100%;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Header and Menu */
@@ -53,27 +61,24 @@
 
         .header h3 {
             font-size: 1.5em;
-            margin-top: 0;
         }
 
         .navbar {
             display: flex;
             justify-content: center;
             background-color: #222;
-            padding: 15px 0;
+            padding: 10px 0;
             margin-bottom: 40px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            width: 100%;
+            justify-content: center;
         }
 
         .navbar a {
             color: #f1f1f1;
-            margin: 0 20px;
+            margin: 0 15px;
             text-transform: uppercase;
             font-weight: bold;
             font-size: 18px;
-            transition: color 0.3s;
         }
 
         .navbar a:hover {
@@ -83,11 +88,11 @@
         /* Sections */
         .section {
             margin-bottom: 40px;
-            padding: 40px;
+            padding: 20px;
             border-top: 3px solid #800080;
             border-bottom: 3px solid #800080;
-            background-color: #232323;
-            border-radius: 10px;
+            width: 100%;
+            text-align: center;
         }
 
         .section img {
@@ -99,25 +104,24 @@
 
         .comparison {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
         .comparison div {
             width: 48%;
-            margin-bottom: 20px;
+            margin: 10px;
         }
 
         .btn {
             background-color: #ff7f00;
             color: #fff;
-            padding: 15px 25px;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
             margin-top: 20px;
-            transition: background-color 0.3s;
         }
 
         .btn:hover {
@@ -126,11 +130,10 @@
 
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 20px;
             background-color: #222;
             color: #fff;
             margin-top: 40px;
-            border-top: 3px solid #ff7f00;
         }
 
         /* Center the badge */
@@ -155,24 +158,6 @@
             .header h1 {
                 font-size: 2.5em;
             }
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Hover Effects */
-        .hover-card {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .hover-card:hover {
-            transform: scale(1.05);
-            background-color: #444;
         }
     </style>
 </head>
@@ -205,7 +190,7 @@
         </section>
 
         <!-- Screenshot Section -->
-        <section class="section screenshot hover-card">
+        <section class="section screenshot">
             <h2>📸 Screenshot</h2>
             <img src="Assets/Capture.png" alt="Screenshot of MedIA-Witch">
         </section>
@@ -224,9 +209,9 @@
 
         <!-- Installation Section -->
         <section id="installation" class="section">
-            <a href="https://sourceforge.net/projects/media-witch/" class="btn">
-                DOWNLOAD SETUP
-            </a>
+            <a href="https://sourceforge.net/projects/media-witch/" class="btn">DOWNLOAD SETUP</a>
+            <br><br>
+            <!-- Begin SF Tag -->
             <div class="badge-container">
                 <div class="sf-root" data-id="3858128" data-badge="oss-users-love-us-black" style="width:125px">
                     <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
@@ -241,6 +226,7 @@
                     p.parentNode.insertBefore(sc, p);
                 })();
             </script>
+            <!-- End SF Tag -->
             <h2>Installation</h2>
             <ol>
                 <li><strong>Run the installer</strong> and follow the instructions.</li>
