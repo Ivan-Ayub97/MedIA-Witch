@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +13,6 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
             flex-direction: column;
             align-items: center;
         }
@@ -40,10 +38,11 @@
             max-width: 1200px;
             width: 100%;
             padding: 20px;
-            text-align: center;
         }
 
+        /* Header and Menu */
         .header {
+            text-align: center;
             margin-bottom: 40px;
         }
 
@@ -54,9 +53,29 @@
 
         .header h3 {
             font-size: 1.5em;
-            margin-top: 0;
         }
 
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 10px 0;
+            margin-bottom: 40px;
+        }
+
+        .navbar a {
+            color: #f1f1f1;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #ff7f00;
+        }
+
+        /* Sections */
         .section {
             margin-bottom: 40px;
             padding: 20px;
@@ -80,10 +99,6 @@
             width: 48%;
         }
 
-        .comparison img {
-            border-radius: 10px;
-        }
-
         .btn {
             background-color: #ff7f00;
             color: #fff;
@@ -93,8 +108,6 @@
             cursor: pointer;
             font-size: 16px;
             margin-top: 20px;
-            display: inline-flex;
-            align-items: center;
         }
 
         .btn:hover {
@@ -103,13 +116,13 @@
 
         .sf-badge {
             margin-left: 0;
-            margin-top: 10px; /* Añadir un pequeño margen superior */
+            margin-top: 10px;
             display: block;
-            width: 150px; /* Reducir el tamaño */
+            width: 150px;
             margin-left: auto;
-            margin-right: auto; /* Centrar el badge */
+            margin-right: auto;
         }
-        
+
         footer {
             text-align: center;
             padding: 20px;
@@ -147,93 +160,81 @@
             <!-- Button and SourceForge Badge Integration -->
             <a href="https://sourceforge.net/projects/media-witch/" class="btn">
                 DOWNLOAD SETUP
-                <!-- Begin SF Badge -->
-                <div class="sf-root sf-badge" data-id="3858128" data-badge="oss-users-love-us-black" style="width: 200px;">
-                    <a href="https://sourceforge.net/projects/media-witch/" target="_blank">MedIA-Witch</a>
-                </div>
-                <script>
-                    (function () {
-                        var sc = document.createElement('script');
-                        sc.async = true;
-                        sc.src = 'https://b.sf-syn.com/badge_js?sf_id=3858128';
-                        var p = document.getElementsByTagName('script')[0];
-                        p.parentNode.insertBefore(sc, p);
-                    })();
-                </script>
-                <!-- End SF Badge -->
             </a>
         </header>
 
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <a href="#overview">Overview</a>
+            <a href="#features">Key Features</a>
+            <a href="#installation">Installation</a>
+            <a href="#usage">How to Use</a>
+            <a href="#comparison">Quality Comparison</a>
+            <a href="#requirements">System Requirements</a>
+            <a href="#credits">Credits</a>
+        </nav>
+
         <!-- Overview Section -->
-        <section class="section">
-            <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application designed to enhance images and videos using advanced AI models. Built upon <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a>, the tool integrates optimized models like <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>. This allows users to easily improve the quality and resolution of media content with just a few clicks.</p>
+        <section id="overview" class="section">
+            <h2>About MedIA-Witch</h2>
+            <p><strong>MedIA-Witch</strong> is a powerful open-source desktop application designed to enhance images and videos using advanced AI models. Built upon <a href="https://github.com/Djdefrag/QualityScaler">QualityScaler</a>, the tool integrates optimized models like <strong>Real-ESRGAN</strong>, <strong>SRGAN</strong>, <strong>BSRGAN</strong>, and <strong>IRCNN</strong>.</p>
             <img src="Assets/logo.png" alt="MedIA-Witch logo">
         </section>
 
-        <!-- Screenshot Section -->
-        <section class="section screenshot">
-            <h2>📸 Screenshot</h2>
-            <img src="Assets/Capture.png" alt="Screenshot of MedIA-Witch">
-        </section>
-
         <!-- Key Features Section -->
-        <section class="section">
-            <h2>🌟 Key Features</h2>
+        <section id="features" class="section">
+            <h2>Key Features</h2>
             <ul>
-                <li><strong>Advanced AI Models for Quality Enhancement</strong>: Features Real-ESRGAN, SRGAN, BSRGAN, and IRCNN for improving image and video quality, reducing noise, and boosting resolution.</li>
-                <li><strong>Batch Processing</strong>: Process multiple images and videos simultaneously, perfect for restoring large collections.</li>
-                <li><strong>Customizable Settings</strong>: Adjust output resolution, format, and select the optimal AI model for the best enhancement results.</li>
-                <li><strong>User-Friendly Interface</strong>: Simple and intuitive interface for users of all levels, making media enhancement easy and fast.</li>
-                <li><strong>Open-Source</strong>: MedIA-Witch is released under the <a href="https://github.com/Ivan-Ayub97/MedIA-Witch/blob/main/LICENSE.md">MIT License</a>, giving users the freedom to modify and extend the tool's functionality.</li>
+                <li><strong>Advanced AI Models for Quality Enhancement</strong>: Real-ESRGAN, SRGAN, BSRGAN, and IRCNN for improving media quality.</li>
+                <li><strong>Batch Processing</strong>: Process multiple images and videos simultaneously.</li>
+                <li><strong>Customizable Settings</strong>: Adjust resolution, format, and AI model for the best enhancement results.</li>
+                <li><strong>User-Friendly Interface</strong>: Easy to use for users of all levels.</li>
+                <li><strong>Open-Source</strong>: Released under the <a href="https://github.com/Ivan-Ayub97/MedIA-Witch/blob/main/LICENSE.md">MIT License</a>.</li>
             </ul>
         </section>
 
         <!-- Installation Section -->
-        <section class="section">
-            <h2>🚀 Installation</h2>
-            <p>To get started with <strong>MedIA-Witch</strong>, follow these steps:</p>
+        <section id="installation" class="section">
+            <h2>Installation</h2>
             <ol>
-                <li><strong>Run the installer</strong> and follow the on-screen instructions.</li>
-                <li><strong>Launch the application</strong>: Open MedIA-Witch.exe on your Windows system.</li>
+                <li><strong>Run the installer</strong> and follow the instructions.</li>
+                <li><strong>Launch the application</strong>: Open MedIA-Witch.exe.</li>
                 <li><strong>Start enhancing your media!</strong></li>
             </ol>
-            <p>MedIA-Witch uses <a href="https://www.pyinstaller.org/">PyInstaller</a> and <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup</a> for streamlined installation and packaging.</p>
         </section>
 
         <!-- How to Use Section -->
-        <section class="section">
-            <h2>🛠️ How to Use</h2>
+        <section id="usage" class="section">
+            <h2>How to Use</h2>
             <ol>
-                <li><strong>Launch the application</strong>: Run MedIA-Witch.exe as an administrator for optimal performance.</li>
-                <li><strong>Select your media files</strong>: Upload images, videos, or entire folders for enhancement.</li>
-                <li><strong>Configure your settings</strong>: Choose the AI model (Real-ESRGAN, SRGAN, BSRGAN, IRCNN, etc.) and adjust the output resolution and format (PNG, JPEG, MP4, etc.).</li>
-                <li><strong>Start the enhancement process</strong>: Click the <strong> UPSCALE</strong> button to begin.</li>
-                <li><strong>Save your enhanced files</strong>: Once processing is complete, the files will be saved in your chosen location.</li>
+                <li><strong>Launch the application</strong> as administrator.</li>
+                <li><strong>Select your media files</strong>: Upload images or videos.</li>
+                <li><strong>Configure your settings</strong>: Choose AI model, resolution, and format.</li>
+                <li><strong>Start the enhancement process</strong> by clicking "UPSCALE".</li>
+                <li><strong>Save your files</strong> once processing is complete.</li>
             </ol>
         </section>
 
-       <!-- Quality Comparison Section -->
-        <section class="section comparison">
-            <h2>🔍 Quality Comparison</h2>
+        <!-- Quality Comparison Section -->
+        <section id="comparison" class="section">
+            <h2>Quality Comparison</h2>
             <img src="Assets/Quality_Comparison.gif" alt="Quality Comparison">
         </section>
 
-
         <!-- System Requirements Section -->
-        <section class="section">
-            <h2>📊 System Requirements</h2>
+        <section id="requirements" class="section">
+            <h2>System Requirements</h2>
             <ul>
                 <li><strong>Operating System:</strong> Windows 10 or later.</li>
-                <li><strong>RAM:</strong> Minimum 4GB, recommended 8GB or more.</li>
-                <li><strong>GPU:</strong> A <strong>NVIDIA GPU</strong> is recommended for better performance.</li>
-                <li><strong>Storage:</strong> Sufficient space to store output files, depending on the size and number of processed files.</li>
+                <li><strong>RAM:</strong> Minimum 4GB, recommended 8GB.</li>
+                <li><strong>GPU:</strong> NVIDIA GPU for better performance.</li>
+                <li><strong>Storage:</strong> Space for processed files.</li>
             </ul>
         </section>
 
         <!-- Credits Section -->
-        <section class="section">
-            <h2>📜 Credits and License</h2>
-            <p>MedIA-Witch is based on <a href="https://github.com/Djdefrag/QualityScaler.git">QualityScaler</a> and integrates several open-source technologies:</p>
+        <section id="credits" class="section">
+            <h2>Credits and License</h2>
             <ul>
                 <li><a href="https://github.com/Djdefrag/QualityScaler.git">QualityScaler</a> (MIT License)</li>
                 <li><a href="https://github.com/xinntao/Real-ESRGAN">Real-ESRGAN</a> (MIT License)</li>
@@ -248,10 +249,10 @@
 
         <!-- Footer -->
         <footer>
-            <p>Made by Iván E. C. Ayub (Ivan-Ayub97). Open-source project. <a href="https://github.com/Ivan-Ayub97/MedIA-Witch.git" target="_blank">Visit the GitHub repository</a>. 2025</p>
+            <p>Made by Iván E. C. Ayub. Open-source project. <a href="https://github.com/Ivan-Ayub97/MedIA-Witch.git" target="_blank">GitHub repository</a>. 2025</p>
         </footer>
-
     </div>
+
 </body>
 
 </html>
