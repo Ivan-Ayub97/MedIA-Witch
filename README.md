@@ -1,6 +1,6 @@
 ### Download
 
-[Click here to download](https://sourceforge.net/projects/media-witch/)
+[Click here to download](https://ivanayub97.itch.io/media-witch)
 
 # MedIA-Witch
 
