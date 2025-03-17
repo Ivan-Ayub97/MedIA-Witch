@@ -1,6 +1,4 @@
-### Download
-
-[Click here to download](https://ivanayub97.itch.io/media-witch)
+<iframe frameborder="0" src="https://itch.io/embed/3401857" width="552" height="167"><a href="https://ivanayub97.itch.io/media-witch">MedIA-Witch by Ivan-Ayub97</a></iframe>
 
 # MedIA-Witch
 
