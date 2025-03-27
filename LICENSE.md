@@ -19,31 +19,15 @@ The Software is provided "AS IS", without warranty of any kind, express or impli
 
 ---
 
-### **Technologies and Libraries Used in MedIA-Witch:**
-
-**MedIA-Witch** is based on **[QualityScaler](https://github.com/Djdefrag/QualityScaler.git)**, an advanced platform for enhancing images and videos using AI models. It also integrates several open-source technologies to enhance its functionality:
-
-- **[QualityScaler](https://github.com/Djdefrag/QualityScaler.git)** – The foundation of MedIA-Witch, implementing AI models such as Real-ESRGAN, SRGAN, BSRGAN, and IRCNN_Mx1_fp16.
-- **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)** – AI model for image resolution enhancement.
-- **[SRGAN](https://arxiv.org/abs/1609.04802)** – Generative adversarial network for super-resolution.
-- **[BSRGAN](https://arxiv.org/abs/1901.05324)** – Generative adversarial network for super-resolution in degraded images.
-- **[IRCNN](https://github.com/lipengFu/IRCNN.git)** – AI model for noise reduction and image enhancement using convolutional neural networks.
-- **[ONNX Runtime](https://onnxruntime.ai/)** – Optimized execution engine for deep learning models.
-- **[FFmpeg](https://ffmpeg.org/)** – Multimedia framework for processing images and videos.
-- **[PyInstaller](https://www.pyinstaller.org/)** – Tool for packaging MedIA-Witch into an executable file.
-- **[Inno Setup](http://www.jrsoftware.org/isinfo.php)** – Used for creating the MedIA-Witch installer.
-
----
-
 ### **Licenses of Integrated Technologies:**
 
 Each technology used in **MedIA-Witch** has its own open-source license. Below are the licenses of the libraries and tools utilized:
 
 - **[QualityScaler](https://github.com/Djdefrag/QualityScaler.git)** – MIT License
-- **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)** – MIT License
-- **[SRGAN](https://arxiv.org/abs/1609.04802)** – MIT License
-- **[BSRGAN](https://arxiv.org/abs/1901.05324)** – MIT License
-- **[IRCNN](https://github.com/lipengFu/IRCNN.git)** – MIT License
+- **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)** – BSD License
+- **[SRGAN](https://github.com/tensorlayer/SRGAN)** – For academic and non-commercial use only
+- **[BSRGAN](https://github.com/cszn/BSRGAN)** – Apache License
+- **[IRCNN](https://github.com/cszn/IRCNN)**
 - **[ONNX Runtime](https://onnxruntime.ai/)** – Apache License 2.0
 - **[FFmpeg](https://ffmpeg.org/)** – LGPL-2.1 or later
 - **[PyInstaller](https://www.pyinstaller.org/)** – GPLv2 or later
