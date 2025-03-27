@@ -1,4 +1,4 @@
-[Homepage to download](https://media-witch-52vhm1s.gamma.site/)
+[Download from the Homepage](https://media-witch-52vhm1s.gamma.site/media-witch)
 
 # MedIA-Witch
 
@@ -75,10 +75,10 @@ MedIA-Witch uses [PyInstaller](https://www.pyinstaller.org/) and [InnoSetup](htt
 **MedIA-Witch** is based on [QualityScaler](https://github.com/Djdefrag/QualityScaler.git) and integrates several open-source technologies, including:
 
 - **[QualityScaler](https://github.com/Djdefrag/QualityScaler.git)** – The main engine for image and video enhancement with AI. (MIT License)
-- **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)** – Model for enhancing image resolution. (MIT License)
-- **[SRGAN](https://arxiv.org/abs/1609.04802)** – Generative Adversarial Network for super-resolution. (MIT License)
-- **[BSRGAN](https://arxiv.org/abs/1901.05324)** – Generative Adversarial Network for degraded images. (MIT License)
-- **[IRCNN](https://github.com/lipengFu/IRCNN.git)** – Model for noise reduction and image enhancement. (MIT License)
+- **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)** – Model for enhancing image resolution. (BSD License)
+- **[SRGAN](https://github.com/tensorlayer/SRGAN)** – Generative Adversarial Network for super-resolution. (For academic and non-commercial use only)
+- **[BSRGAN](https://github.com/cszn/BSRGAN)** – Generative Adversarial Network for degraded images. (Apache License)
+- **[IRCNN](https://github.com/lipengFu/IRCNN.git)** – Model for noise reduction and image enhancement.
 - **[ONNX Runtime](https://onnxruntime.ai/)** – Optimized engine for running deep learning models. (Apache License 2.0)
 - **[FFmpeg](https://ffmpeg.org/)** – Multimedia framework for image and video processing. (LGPL-2.1 or later)
 - **[PyInstaller](https://www.pyinstaller.org/)** – Tool for packaging MedIA-Witch into an executable file. (GPLv2 or later)
