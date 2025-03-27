@@ -49,7 +49,7 @@ The author(s) of this Software assume no responsibility for its use. Any issues 
 
 ---
 
-If you have any questions or suggestions, contact us at [sellocasadenubes@gmail.com](mailto:sellocasadenubes@gmail.com).
+If you have any questions or suggestions, contact us at [negroayub97@gmail.com](mailto:negroayub97@gmail.com).
 
 ---
 
