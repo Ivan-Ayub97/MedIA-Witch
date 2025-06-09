@@ -1,9 +1,9 @@
-### Warlock-Studio 2.0 is now available!
+# Warlock-Studio 2.0 is now available!
 The ultimate solution that combines MedIA-Wizard and MedIA-Witch into a single, powerful, and user-friendly interface.
 
 [Click Here to Download from the Homepage](https://warlockhub-17vu0fo.gamma.site/warlockhub)  
 
-# MedIA-Witch
+## MedIA-Witch
 
 ### AI-Based Image and Video Enhancement Tool
 
